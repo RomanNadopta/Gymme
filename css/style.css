@@ -395,7 +395,6 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 246px;
 }
 
 .workouts-images {
@@ -412,9 +411,9 @@ input[type=radio].visually-hidden {
 .workouts-slide img {
   margin-top: 11px;
   height: 220px;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.8;
+  -o-transition: 0.8;
+  transition: 0.8;
 }
 
 .swiper-slide {
@@ -426,9 +425,6 @@ input[type=radio].visually-hidden {
   position: relative;
   height: 242px;
   top: -11px;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
 }
 
 .workouts-slide .describe-img {
@@ -916,7 +912,7 @@ input[type=radio].visually-hidden {
   }
 
   .workouts-list {
-    height: 350px;
+    height: auto;
   }
 
   .workouts-wrapper {
