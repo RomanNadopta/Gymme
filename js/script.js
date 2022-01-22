@@ -38,7 +38,6 @@ navToggle.addEventListener("click", function () {
 if (document.querySelector(".workouts-images")) {
   new Swiper(".workouts-wrapper", {
     loop: true,
-
     autoplay: {
       delay: 5000,
     },
@@ -53,8 +52,8 @@ if (document.querySelector(".workouts-images")) {
     speed: 500,
 
     navigation: {
-      nextEl: ".button-right",
-      prevEl: ".button-left",
+      nextEl: ".button-right__workouts",
+      prevEl: ".button-left__workouts",
     },
     breakpoints: {
       834: {
@@ -82,8 +81,8 @@ if (document.querySelector(".community-images")) {
     speed: 500,
 
     navigation: {
-      nextEl: ".button-right",
-      prevEl: ".button-left",
+      nextEl: ".button-right__community",
+      prevEl: ".button-left__community",
     },
 
     breakpoints: {
@@ -108,3 +107,25 @@ if (document.querySelector(".faq")) {
     });
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollItems = document.querySelectorAll(".scroll-item");
+
+  window.addEventListener("scroll", () => {
+    const scrollAnimation = () => {
+      let windowCenter = window.innerHeight / 1.6 + window.scrollY;
+      scrollItems.forEach((el) => {
+        let scrollOffset = el.offsetTop + el.offsetHeight / 6;
+        if (windowCenter >= scrollOffset) {
+          el.classList.add("animation-class");
+        } else {
+          el.classList.remove("animation-class");
+        }
+      });
+    };
+    scrollAnimation();
+    window.addEventListener("scroll", () => {
+      scrollAnimation();
+    });
+  });
+});
