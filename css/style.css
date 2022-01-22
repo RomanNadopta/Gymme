@@ -155,7 +155,8 @@ input[type=radio].visually-hidden {
 }
 
 .question-list,
-.page-footer__wrapper {
+.page-footer__wrapper,
+.pricing-plan {
   overflow: hidden;
 }
 
