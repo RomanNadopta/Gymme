@@ -1,0 +1,131 @@
+.community-title {
+  position: relative;
+  margin-top: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.community-title::before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 70px;
+
+  background-image: url("../img/svg/speech-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.community-list {
+  display: flex;
+}
+
+.community-images {
+  display: flex;
+  overflow: hidden;
+}
+
+.community-wrapper {
+  margin-top: 50px;
+}
+
+.community-slide {
+  position: relative;
+}
+
+.community-slide img {
+  height: 400px;
+}
+
+.review {
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  bottom: 80px;
+  text-align: center;
+
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+
+  z-index: 2;
+
+  color: #ffffff;
+}
+
+.author {
+  position: absolute;
+
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+
+
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 18px;
+
+  color: #ffffff;
+}
+
+.tilde-color {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  color: #4AE290;
+}
+
+@media (min-width: $tablet-width) {
+  .community-title {
+    margin-top: 150px;
+  }
+
+  .community-title::before {
+
+    top: -38px;
+    left: -54px;
+
+    width: 134px;
+    height: 120px;
+
+  }
+
+  .community-wrapper {
+    margin-top: 122px;
+  }
+
+  .community-slide img {
+    height: 480px;
+  }
+
+  .review {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .author {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .community {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community-title {
+    left: 28%;
+  }
+
+  .community-images {
+    position: relative;
+    left: 10%;
+  }
+}

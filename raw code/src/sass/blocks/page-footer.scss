@@ -1,0 +1,134 @@
+.page-footer {
+  position: relative;
+  margin-top: 160px;
+}
+
+.page-footer::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  width: 276px;
+  height: 386px;
+  background-image: url("../img/images/fun-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+
+}
+
+.page-footer__wrapper {
+
+  background-color: #000000;
+
+}
+
+.page-footer__title-container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-top: 218px;
+  padding-right: 20px;
+  max-width: 358px;
+
+  z-index: 2;
+}
+
+.page-footer__title {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+
+.color-green {
+  color: #4AE290;
+}
+
+.page-footer__text {
+  padding-top: 25px;
+
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.join-footer {
+  font-size: 14px;
+}
+
+.join-footer:active {
+  font-size: 16px;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 20px 50px 20px;
+}
+
+
+.page-footer__policy {
+  margin-top: 5px;
+
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+
+  color: #9797A2;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    position: relative;
+    margin-top: 310px;
+  }
+
+  .page-footer::before {
+    width: 443px;
+    height: 618px;
+    background-image: url("../img/images/fun-tablet.png");
+  }
+
+  .page-footer__title-container {
+    max-width: 462px;
+  }
+
+  .page-footer__title-container {
+    top: -130px;
+    left: 140px;
+  }
+
+  .page-footer__title {
+    font-size: 60px;
+    line-height: 62px;
+  }
+
+  .page-footer__text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .page-footer__logo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer::before {
+    width: 500px;
+    height: 618px;
+    background-image: url("../img/images/fun-desktop.png");
+    margin-left: 259px;
+  }
+
+  .page-footer__logo {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

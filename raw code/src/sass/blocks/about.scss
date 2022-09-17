@@ -1,0 +1,112 @@
+.about {
+  position: relative;
+  margin-top: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+.page-main__title {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #131316;
+}
+
+.page-main__title-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-title,
+.workouts-title,
+.price-title {
+  position: relative;
+}
+
+.title-dot {
+  color: #4AE290;
+}
+
+.about-text {
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 32px;
+
+  padding-top: 45px;
+
+  color: #595962;
+}
+
+.about-title::before {
+  position: absolute;
+  content: "";
+
+  top: -20px;
+  left: -40px;
+
+  width: 100px;
+  height: 70px;
+  background-image: url("../img/svg/people-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-join {
+  display: inline-block;
+  position: relative;
+  margin-top: 45px;
+
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #131316;
+}
+
+.about-join::after {
+  position: absolute;
+  left: 92px;
+  top: -1px;
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  text-align: center;
+
+  color: #fff;
+  background-image: url("../img/svg/arrow-right-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .about {
+    padding-left: 106px;
+    padding-right: 106px;
+  }
+
+  .page-main__title {
+    font-size: 50px;
+  }
+
+  .about-title::before {
+    width: 150px;
+    height: 120px;
+
+    top: -40px;
+    left: -70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 783px;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+}

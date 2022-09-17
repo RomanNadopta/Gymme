@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #131316;
+
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.button:hover {
+  background-color: #e4e3e3;
+}
+
+.button:active {
+  font-size: 14px;
+}
+
+.button-navigation__wrapper {
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-right {
+  margin-left: 34px;
+}
+
+.button-left,
+.button-right {
+  cursor: pointer;
+}
+
+.button-left:active,
+.button-right:active {
+  opacity: 0.4;
+}
+
+
+@media(min-width: $tablet-width) {
+  .button {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .button:active {
+    font-size: 16px;
+  }
+
+  .button-navigation__wrapper {
+    top: 78px;
+    padding-right: 42px;
+    justify-content: end;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .community .button-navigation__wrapper {
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    padding-right: 42px;
+  }
+}

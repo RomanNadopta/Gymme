@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/png" sizes="16x16" rel="icon" href="img/images/favicons/icons/favicon-16x16.png">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Inter-ExtraBold.woff2" as="font">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <title>Gymme</title>
+</head>
+
+<body>
+  <svg display="none">
+    <symbol id="arrow-left-icon" viewBox=" 0 0 40 40">
+      <path
+        d="M19.9999 1.66663C30.1249 1.66663 38.3333 9.87496 38.3333 20C38.3333 30.125 30.1249 38.3333 19.9999 38.3333C9.87492 38.3333 1.66659 30.125 1.66659 20C1.66659 9.87496 9.87492 1.66663 19.9999 1.66663ZM23.6783 14.5116C23.9818 14.1973 24.1498 13.7763 24.146 13.3393C24.1422 12.9023 23.967 12.4843 23.658 12.1753C23.3489 11.8662 22.9309 11.691 22.4939 11.6872C22.0569 11.6834 21.6359 11.8514 21.3216 12.155L14.6549 18.8216C14.3425 19.1342 14.1669 19.558 14.1669 20C14.1669 20.4419 14.3425 20.8657 14.6549 21.1783L21.3216 27.845C21.6359 28.1486 22.0569 28.3165 22.4939 28.3127C22.9309 28.309 23.3489 28.1337 23.658 27.8247C23.967 27.5156 24.1422 27.0976 24.146 26.6606C24.1498 26.2236 23.9818 25.8026 23.6783 25.4883L18.1899 20L23.6783 14.5116Z"
+        fill="" />
+    </symbol>
+    <symbol id="arrow-right-icon" viewBox="0 0 40 40">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M20.0001 1.66663C9.87508 1.66663 1.66675 9.87496 1.66675 20C1.66675 30.125 9.87508 38.3333 20.0001 38.3333C30.1251 38.3333 38.3334 30.125 38.3334 20C38.3334 9.87496 30.1251 1.66663 20.0001 1.66663ZM16.3217 14.5116C16.0182 14.1973 15.8502 13.7763 15.854 13.3393C15.8578 12.9023 16.033 12.4843 16.342 12.1753C16.6511 11.8662 17.0691 11.691 17.5061 11.6872C17.9431 11.6834 18.3641 11.8514 18.6784 12.155L25.3451 18.8216C25.6575 19.1342 25.8331 19.558 25.8331 20C25.8331 20.4419 25.6575 20.8657 25.3451 21.1783L18.6784 27.845C18.3641 28.1486 17.9431 28.3165 17.5061 28.3127C17.0691 28.309 16.6511 28.1337 16.342 27.8247C16.033 27.5156 15.8578 27.0976 15.854 26.6606C15.8502 26.2236 16.0182 25.8026 16.3217 25.4883L21.8101 20L16.3217 14.5116Z"
+        fill="" />
+    </symbol>
+  </svg>
+  <header class="page-header">
+    <picture>
+      <source type="image/webp" media="(min-width: 834px)" srcset="img/images/hero-Image-tablet.webp">
+      <source media="(min-width: 834px)" srcset="img/images/hero-Image-tablet.jpg">
+      <source type="image/webp" srcset="img/images/Hero-Image-mobile.webp">
+      <img class="header-img" src="img/images/Hero-Image-mobile.jpg" alt="">
+    </picture>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <img src="img/svg/Logo-icon.svg" alt="logo">
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__list">
+            <ul class="site-list">
+              <li class="site-list__item">
+                <a href="#" class="blog">Home</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#about" class="about-link">About</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#workouts" class="workouts-link">Workouts</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#price" class="pricing-link">Pricing</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#community" class="community-link">Community</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#faq" class="sign-in__link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="user-login">
+            <ul class="user-login__list">
+              <li class="user-login__item">
+                <a class="log-in" href="#">Log in</a>
+              </li>
+              <li class="user-login__item">
+                <a class="sign-in" href="#">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="page-header__title">
+        <h1>Get the best part <br>
+          of your day <br>
+          <span class="title-color">– you fit here.</span></h1>
+        <p>We provide serious fitness but within a fun and friendly, safe space.</p>
+        <a class="button join" href="#">Join now</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+
+    <section class="about animation scroll-item" id="about">
+      <div class="page-main__title-wrapper">
+        <h2 class="page-main__title about-title">Our mission<span class="title-dot">.</span></h2>
+      </div>
+      <p class="about-text animation-text">We are distinguished by our unsurpassed motivating atmosphere, knowledgeable
+        staff, and
+        premier exercise equipment, which supports our members in meeting their individual fitness goals.</p>
+      <p class="about-text animation-text">
+        The strength of our heart-felt identity is utilized to inspire every person that steps foot into our gyms to
+        better themselves.
+      </p>
+      <a class="join about-join" href="#">join now</a>
+    </section>
+
+    <section class="workouts animation scroll-item" id="workouts">
+      <div class="page-main__title-wrapper">
+        <h2 class="page-main__title workouts-title">Training programs<span class="title-dot">.</span></h2>
+      </div>
+      <div class=" workouts-images">
+        <div class="workouts-wrapper swiper">
+          <ul class="workouts-list swiper-wrapper">
+            <li class="workouts-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/training-photo/body-pump-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/training-photo/body-pump-tablet.jpg">
+                <source type="image/webp" srcset="img/images/training-photo/body-pump-mobile.webp">
+                <img class="workouts-image" src="img/images/training-photo/body-pump-mobile.jpg" alt="Body Pump">
+              </picture>
+              <p class="describe-img">Body Pump</p>
+            </li>
+            <li class="workouts-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/training-photo/yoga-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/training-photo/yoga-tablet.jpg">
+                <source type="image/webp" srcset="img/images/training-photo/yoga-mobile.webp">
+                <img class="workouts-image" src="img/images/training-photo/yoga-mobile.jpg" alt="Yoga">
+              </picture>
+              <p class="describe-img">Yoga</p>
+            </li>
+            <li class="workouts-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/training-photo/full-body-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/training-photo/full-body-tablet.jpg">
+                <source type="image/webp" srcset="img/images/training-photo/full-body-mobile.webp">
+                <img class="workouts-image" src="img/images/training-photo/full-body-mobile.jpg" alt="Full Body">
+              </picture>
+              <p class="describe-img">Full Body</p>
+            </li>
+            <li class="workouts-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/training-photo/pilates-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/training-photo/pilates-tablet.jpg">
+                <source type="image/webp" srcset="img/images/training-photo/pilates-mobile.webp">
+                <img class="workouts-image" src="img/images/training-photo/pilates-mobile.jpg" alt="Pilates">
+              </picture>
+              <p class="describe-img">Pilates</p>
+            </li>
+            <li class="workouts-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/training-photo/boxing-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/training-photo/boxing-tablet.jpg">
+                <source type="image/webp" srcset="img/images/training-photo/boxing-mobile.webp">
+                <img class="workouts-image" src="img/images/training-photo/boxing-mobile.jpg" alt="Boxing">
+              </picture>
+              <p class="describe-img">Boxing</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-navigation__wrapper">
+        <div class="button-left button-left__workouts">
+          <svg class="arrow-left-icon" width="40" height="40">
+            <use xlink:href="#arrow-left-icon"></use>
+          </svg>
+        </div>
+        <div class="button-right button-right__workouts">
+          <svg class="arrow-right-icon" width="40" height="40">
+            <use xlink:href="#arrow-right-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="price animation scroll-item" id="price">
+      <div class="page-main__title-wrapper">
+        <h2 class="page-main__title price-title">Pricing plan<span class="title-dot">.</span></h2>
+      </div>
+      <div class="pricing-plan">
+        <div class="pricing-plan__basic animation scroll-item ">
+          <div class="price-package">
+            <ul class="price-package__list">
+              <li class="price-package__title">
+                <span>Basic</span>
+              </li>
+              <li class="price-cost">20<span class="currancy">$</span>
+              </li>
+              <li class="price-per-month">/month</li>
+            </ul>
+          </div>
+
+          <div class="price-advantages">
+            <ul class="price-advantages__list">
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                unlimited gym access</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                1 training programs</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                free fitness consultation</li>
+              <li class="price-advantages__button">
+                <a class="button join-price__white" href="#">Join now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing-plan__premium animation scroll-item">
+          <div class="price-package">
+            <ul class="price-package__list">
+              <li class="price-package__title">
+                <span>Premium</span>
+              </li>
+              <li class="price-cost">35<span class="currancy">$</span></li>
+              <li class="price-per-month">/month</li>
+            </ul>
+          </div>
+          <div class="price-advantages">
+            <ul class="price-advantages__list">
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-white.svg" alt="">
+                unlimited gym access</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-white.svg" alt="">
+                5 training programs</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-white.svg" alt="">
+                free fitness consultation</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-white.svg" alt="">
+                personal trainer</li>
+              <li class="price-advantages__button">
+                <a class="button join-price__black" href="#">Join now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing-plan__elit animation scroll-item">
+          <div class="price-package">
+            <ul class="price-package__list">
+              <li class="price-package__title">
+                <span>Elit</span>
+              </li>
+              <li class="price-cost">49<span class="currancy">$</span></li>
+              <li class="price-per-month">/month</li>
+            </ul>
+          </div>
+          <div class="price-advantages">
+            <ul class="price-advantages__list">
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                unlimited gym access</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                all training programs</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                free fitness consultation</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                personal trainer</li>
+              <li class="price-advantages__item">
+                <img src="img/svg/circle-check-icon-black.svg" alt="">
+                50% off drinks</li>
+
+              <li class="price-advantages__button">
+                <a class="button join-price__white" href="#">Join now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community animation scroll-item" id="community">
+      <div class="page-main__title-wrapper">
+        <h2 class="page-main__title community-title">Community<span class="title-dot">.</span></h2>
+      </div>
+
+      <div class="community-images">
+        <div class="community-wrapper swiper">
+          <ul class="community-list swiper-wrapper">
+            <li class="community-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/community-photo/lauren-k-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/community-photo/lauren-k-tablet.jpg">
+                <source type="image/webp" srcset="img/images/community-photo/lauren-k-mobile.webp">
+                <img src="img/images/community-photo/lauren-k-mobile.jpg" alt="Lauren K.">
+              </picture>
+              <p class="review">“Gymme changed my life. Not only physically but mentally as well. I’m a better mother,
+                and all around better human being because of this gym.”</p>
+              <p class="author"><span class="tilde-color">~</span>Lauren K.</p>
+            </li>
+            <li class="community-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/community-photo/john-d-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/community-photo/john-d-tablet.jpg">
+                <source type="image/webp" srcset="img/images/community-photo/john-d-mobile.webp">
+                <img src="img/images/community-photo/john-d-mobile.jpg" alt="John D.">
+              </picture>
+              <p class="review">“Love these workouts! Trainers are knowledgeable and motivating. Gymme is wonderful!”
+              </p>
+              <p class="author"><span class="tilde-color">~</span>John D.</p>
+            </li>
+            <li class="community-slide swiper-slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 834px)"
+                  srcset="img/images/community-photo/mark-a-tablet.webp">
+                <source media="(min-width: 834px)" srcset="img/images/community-photo/mark-a-tablet.jpg">
+                <source type="image/webp" srcset="img/images/community-photo/mark-a-mobile.webp">
+                <img src="img/images/community-photo/mark-a-mobile.jpg" alt="Mark A.">
+              </picture>
+              <p class="review">“Great location, great price and great, helpful people. What to want more?”</p>
+              <p class="author"><span class="tilde-color">~</span>Mark A.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-navigation__wrapper">
+        <div class="button-left button-left__community">
+          <svg class="arrow-left-icon" width="40" height="40">
+            <use xlink:href="#arrow-left-icon"></use>
+          </svg>
+        </div>
+        <div class="button-right button-right__community">
+          <svg class="arrow-right-icon" width="40" height="40">
+            <use xlink:href="#arrow-right-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq animation scroll-item" id="faq">
+      <div class="page-main__title-wrapper">
+        <h2 class="page-main__title faq-title">FAQ<span class="title-dot">.</span></h2>
+      </div>
+      <ul class="question-list">
+        <li class="question-item question-item--closed">
+          <h6 class="question question--closed">How can I book a workout?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our website and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+
+        <li class="question-item question-item--closed">
+          <h6 class="question">Can I pay by cash for my membership?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our website and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+
+        <li class="question-item question-item--closed">
+          <h6 class="question">What age do I need to be to join?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our website
+            and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+
+        <li class="question-item question-item--closed">
+          <h6 class="question">Are there any lockers?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our website
+            and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+
+        <li class="question-item question-item--closed">
+          <h6 class="question">How do I cancel my membership?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our
+            website and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+
+        <li class="question-item question-item--closed">
+          <h6 class="question">Is there water available at the gym?</h6>
+          <p class="answer">Booking a workout classe is simple for our members. Simply log into your Gymme account on
+            our
+            website and
+            click "book class" button . You can book 3 days in advance at 9pm.</p>
+          <p class="answer">You can cancel your class online by logging back in and click "cancel booking"</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer animation scroll-item">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__title-container">
+        <h2 class="page-footer__title">Wanna join <span class="color-green">&</span> <br> have fun?</h2>
+        <p class="page-footer__text">We'll keep you updated on the things you need to know about Gymme. Nothing more,
+          nothing less.</p>
+        <a class="button join-footer" href="#">Join now</a>
+      </div>
+      <div class="page-footer__logo">
+        <img src="img/svg/Logo-icon.svg" alt="Gymme">
+        <p class="page-footer__policy">All rights reserved. Gymme 2021.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

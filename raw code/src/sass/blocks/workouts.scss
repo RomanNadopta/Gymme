@@ -1,0 +1,88 @@
+.workouts {
+  position: relative;
+  margin-top: 125px;
+}
+
+.workouts-title::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: -20px;
+  width: 100px;
+  height: 70px;
+  background-image: url("../img/svg/clarity_calendar-solid-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.workouts-list {
+  display: flex;
+}
+
+.workouts-images {
+  display: flex;
+  overflow: hidden;
+}
+
+.workouts-wrapper {
+  margin-top: 76px;
+}
+
+
+.workouts-slide img {
+  margin-top: 11px;
+  height: 220px;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.swiper-slide-active .workouts-image {
+  display: block;
+  position: relative;
+  height: 242px;
+  top: -11px;
+}
+
+
+
+.workouts-slide .describe-img {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 4px 14px;
+  margin-left: 6px;
+  bottom: 30px;
+
+  color: #131316;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .workouts-title::before {
+    width: 106px;
+    height: 86px;
+
+    left: -38px;
+    top: -24px;
+  }
+
+  .workouts-list {
+    height: auto;
+  }
+
+  .workouts-wrapper {
+    margin-top: 120px;
+  }
+
+
+  .workouts-slide img {
+    height: 320px;
+  }
+
+  .swiper-slide-active .workouts-image {
+    height: 350px;
+  }
+}

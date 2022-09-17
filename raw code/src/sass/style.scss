@@ -1,0 +1,28 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+    url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+
+
+@import "fonts";
+@import "mixins";
+@import "scaffolding";
+@import "variables";
+@import "animation";
+
+@import "./blocks/page-header";
+@import "./blocks/button";
+@import "./blocks/main-nav";
+@import "./blocks/about";
+@import "./blocks/workouts";
+@import "./blocks/price";
+@import "./blocks/community";
+@import "./blocks/faq";
+@import "./blocks/page-footer";

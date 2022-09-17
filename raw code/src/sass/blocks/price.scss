@@ -1,0 +1,249 @@
+.price {
+  margin-top: 100px;
+}
+
+.pricing-plan {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pricing-plan__basic,
+.pricing-plan__elit {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(19, 19, 22, 0.05);
+  border-radius: 2px;
+}
+
+.price-title {
+  position: relative;
+}
+
+.price-title::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 70px;
+
+  left: -50px;
+  top: -20px;
+  background-image: url("../img/svg/label-price-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+.price-package {
+  display: inline-block;
+  width: 35%;
+
+  margin-top: 40px;
+}
+
+
+
+.price-package__list {
+  text-align: center;
+}
+
+.price-package__title span {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+
+  padding: 4px 14px;
+  color: #ffffff;
+  background-color: #131316;
+  border-radius: 1px;
+}
+
+.price-cost {
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 24px;
+}
+
+.currancy {
+  font-size: 24px;
+}
+
+.price-per-month {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.price-advantages__item {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.price-advantages__item img {
+
+  position: relative;
+  top: 4px;
+}
+
+.join-price__white {
+  margin-top: 16px;
+  padding: 14px 20px;
+  font-size: 14px;
+  border: 1px solid #131316;
+  background-color: transparent;
+  border-radius: 1px;
+}
+
+.join-price__white:active,
+.join-price__black:active {
+  font-size: 16px;
+}
+
+.pricing-plan__premium {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #131316;
+
+  border-radius: 2px;
+}
+
+.pricing-plan__premium {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.pricing-plan__premium .price-package {
+  margin-top: 60px;
+}
+
+.pricing-plan__premium .price-cost {
+  color: #ffffff;
+}
+
+.pricing-plan__premium .price-per-month {
+  color: #ffffff;
+}
+
+.pricing-plan__premium .price-package__title span {
+  background-color: #ffffff;
+  color: #131316;
+}
+
+.pricing-plan__premium .price-advantages__item {
+  color: #ffffff;
+}
+
+
+.join-price__black {
+  margin-top: 16px;
+  padding: 14px 20px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+
+.pricing-plan__elit {
+  margin-top: 0;
+}
+
+.pricing-plan__elit .price-package {
+  margin-top: 86px;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    margin-top: 216px;
+  }
+
+
+  .price-package__list {
+    text-align: center;
+    margin-left: -150px;
+  }
+
+  .price-title::before {
+    width: 118px;
+    height: 120px;
+
+    left: -68px;
+    top: -50px;
+  }
+
+  .pricing-plan {
+    padding-left: 106px;
+    padding-right: 106px;
+  }
+
+  .price-package {
+    width: 50%;
+  }
+
+  .pricing-plan__premium {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pricing-plan {
+    display: flex;
+    padding-top: 138px;
+  }
+
+  .pricing-plan__basic,
+  .pricing-plan__premium,
+  .pricing-plan__elit {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .pricing-plan__basic {
+    padding-top: 80px;
+  }
+
+  .pricing-plan__premium {
+    position: relative;
+    bottom: 26px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .pricing-plan__basic,
+  .pricing-plan__elit {
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
+
+  .price-package {
+    width: 100%;
+  }
+
+  .price-package__list {
+    margin-left: 0;
+  }
+
+  .price-advantages {
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+  }
+
+  .pricing-plan__elit .price-package {
+    margin-top: 0;
+  }
+
+  .price-advantages__button {
+    padding-bottom: 80px;
+  }
+}
